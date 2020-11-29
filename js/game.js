@@ -104,7 +104,7 @@ class Game{
                  
                   if (player.index !== null) {
                      //fill code here, to destroy the objects.
-                  if(players[index-1].isTouching(fruitGroup)){
+                  if(fruitGroup.isTouching(players[index-1])){
                       fruitGroup.destroyEach()
                       score = score+10
                   }  
