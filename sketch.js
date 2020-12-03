@@ -27,9 +27,7 @@ function setup() {
   createCanvas(1000, 600);
   database = firebase.database();
   scoreRef=database.ref('score')
-  scoreRef.on("value", function (data){
-    score = data.val();
-  })
+  
   game = new Game();
   game.getState();
   game.start();

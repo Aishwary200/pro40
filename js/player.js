@@ -12,7 +12,7 @@ class Player {
             playerCount = data.val();
         })
     }
-
+    
     updateCount(count) {
         database.ref('/').update({
             playerCount: count
